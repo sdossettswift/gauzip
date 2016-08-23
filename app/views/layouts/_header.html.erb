@@ -2,21 +2,15 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
         <h3><%=link_to 'Gauzip', root_path%><i class="fa fa-bullhorn" aria-hidden="true"></i></h3>
     </div>
 
       <ul class="nav navbar-nav navbar-right">
         <%if @current_user!=nil%>
         <li><%=link_to 'Share Gossip', new_post_path%></li>
-        <li><%=link_to 'Sign Out', sign_out_path%></li>
         <li><%= link_to 'All Users', users_path %></li>
         <li><%= link_to 'Your Clique', following_path %> </li>
+        <li><%=link_to 'Sign Out', sign_out_path%></li>
           <%else%>
           <li><%=link_to 'Sign In ', sign_in_path%></li>
           <li><%=link_to ' Sign Up', new_user_path%></li>
