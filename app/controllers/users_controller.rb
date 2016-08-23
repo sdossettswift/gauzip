@@ -40,6 +40,26 @@ class UsersController < ApplicationController
     redirect_to root_path, notice: "User Destroyed"
   end
 
+  def profile
+    @user = User.find_by! id: params[:user_id]
+  end
+
+  def timeline
+    user_id = session[:user_id]
+    if user_id.present?
+        @current_user = User.find_by id: user_id
+          if @current_user && @current_user.following_users.present?
+            follower_ids = @current_user.following_users.pluck(:id)
+            all_ids = follower_ids << @current_user.id
+            @posts = Post.where(user_id: all_ids).order("created_at DESC")
+          else
+            @posts = Post.all.order("created_at desc")
+          end
+      else
+        @posts = Post.all.order("created_at desc")
+      end
+  end
+
   def following
     @users = @current_user.following_users
   end
