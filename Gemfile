@@ -11,6 +11,19 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.7'
+gem "acts_as_follower"
+gem 'minitest-rails'
+gem 'simple_form'
+gem 'faker'
+gem 'font-awesome-sass'
+gem 'kaminari', '~> 0.16.3'
+gem 'kaminari-bootstrap'
+gem 'bootstrap-sass'
+gem 'rails_12factor'
+
+group :test do
+  gem "minitest-rails-capybara"
+end
 
 group :development, :test do
   gem 'byebug', platform: :mri
