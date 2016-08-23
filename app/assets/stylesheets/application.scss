@@ -3,12 +3,25 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
-
-
 $pink: #F47DB6;
 *{
   font-family: 'Avenir', sans-serif;
 }
+
+.body{
+  min-height: 78vh;
+}
+$brand-primary: $pink;
+.navbar{
+  background-color: $pink;
+  *{
+    color: white;
+  }
+  li{
+    color: white;
+  }
+}
+
 
 .so_and_so_says{
   font-family: 'Parisienne', cursive;
@@ -115,7 +128,7 @@ $pink: #F47DB6;
   background-color: $pink;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
     a{
       color: white;
     }
