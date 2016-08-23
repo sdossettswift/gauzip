@@ -1,0 +1,122 @@
+@import 'bootstrap';
+@import 'bootstrap-sprockets';
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+
+
+$pink: #F47DB6;
+*{
+  font-family: 'Avenir', sans-serif;
+}
+
+.so_and_so_says{
+  font-family: 'Parisienne', cursive;
+  text-align: center;
+  color: $pink;
+  font-size: 14px;
+}
+.edit_links{
+  text-align: center;
+  color: $pink;
+  font-size: 14px;
+  a{
+    padding: 10px;
+  }
+}
+.yield-container{
+  height: 78vh;
+}
+.footer{
+  height: 10vh;
+}
+.page-header{
+  text-align: center;
+  color: $pink;
+}
+.li{
+  list-style: none;
+  display: inline;
+}
+.row {
+  background-color: $pink;
+}
+.header_links{
+  background-color:#F47DB6;
+  text-decoration: none;
+  color: white;
+  margin: 5px;
+  text-align: right;
+  a{
+    color: white;
+  }
+}
+.header_bar{
+  background-color:#F47DB6;
+  text-decoration: none;
+  color: white;
+  margin: 0;
+  height: 10vh;
+  padding: 10px 20px;
+    h1{
+      font-size: 48px;
+    }
+    a{
+      color: white;
+    }
+    h2{
+      font-size: 36px;
+      text-align: center;
+    }
+
+    .header_links{
+      color: white;
+      padding: -40px 10px;
+      font-size: 18px;
+    }
+}
+
+.gossip_message {
+    font-size: 48px;
+    text-align: center;
+    color: $pink;
+    margin: 0;
+    padding: 0;
+    line-height: auto;
+
+  }
+
+.top_quote_marks {
+  font-size: 48px;
+  text-align: center;
+  font-family: serif;
+  color: $pink;
+  margin-top: 30px;
+  padding: 0;
+  font-family: 'Coustard', serif;
+  content: open-quote;
+  // line-height: 0;
+}
+
+.bottom_quote_marks {
+  font-size: 48px;
+  text-align: center;
+  font-family: serif;
+  color: $pink;
+  margin: 0;
+  padding: 0;
+  content: open-quote;
+  // line-height: 0;
+}
+
+
+.footer{
+  font-size: 14px;
+  background-color: $pink;
+  color: white;
+  text-align: center;
+  padding: 20px;
+    a{
+      color: white;
+    }
+}
