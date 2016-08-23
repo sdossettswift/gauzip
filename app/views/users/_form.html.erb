@@ -1,0 +1,18 @@
+<% if @user.errors.any? %>
+  <div class="alert alert-danger" role="alert">
+    <% @user.errors.full_messages.each do |msg| %>
+      <%= msg %><br>
+    <% end %>
+  </div>
+<% end %>
+
+<div class="well">
+    <%= simple_form_for @user do |f| %>
+      <%= f.input :username%>
+      <%= f.input :full_name%>
+      <%= f.input :email%>
+      <%= f.input :password%>
+      <%= f.input :password_confirmation%>
+      <%= f.button :submit%>
+  <% end %>
+</div>
