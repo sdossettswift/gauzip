@@ -1,4 +1,4 @@
-nguage: ruby
+language: ruby
 rvm:
 - 2.3.1
 addons:
@@ -13,5 +13,5 @@ deploy:
   app: gauzip
   on:
     repo: sdossettswift/gauzip
-     run:
-       - "rake db:migrate"
+  run:
+    - "rake db:migrate"
