@@ -1,0 +1,22 @@
+<div class="gossip_detail">
+
+  <div class="so_and_so_says">
+  <h2>  <%=@post.user.username%> Says:</h2>
+  </div>
+    <div class ="top_quote_marks">
+      <i class="fa fa-quote-left" aria-hidden="true"></i>
+
+          </div>
+  <div class="gossip_message">
+
+      <%=@post.message%>
+        </div>
+      <div class ="bottom_quote_marks">
+        <i class="fa fa-quote-right" aria-hidden="true"></i>
+            </div>
+
+
+
+  <%= link_to 'Edit this Gossip', edit_post_path(id: @post.id) %>
+  <%= link_to 'Delete this Gossip', post_path(id: @post.id), method: :delete %>
+</div>

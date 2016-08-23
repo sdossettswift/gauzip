@@ -54,7 +54,7 @@ class PostsController < ApplicationController
     Post.where(user_id: all_ids).order("created_at DESC")
   end
 
-  def detail
+  def show
     @post = Post.find_by id: params[:id]
   end
 end

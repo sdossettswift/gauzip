@@ -1,2 +1,14 @@
-<h1>Dashboard#welcome</h1>
-<p>Find me in app/views/dashboard/welcome.html.erb</p>
+  <div class="list-group">
+      <div class="list-group-item">
+        <div class="page-header">
+          <h2>All Gauzip</h2>
+        </div>
+
+
+          <% @posts.each do |post| %>
+            <p>
+              <%= link_to post.message, post_path(id: post.id) %> by <%= post.user.username %>
+            </p>
+          <% end %>
+        </div>
+      </div>
