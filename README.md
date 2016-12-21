@@ -7,5 +7,6 @@
 * Sessions
 * Bootstrap
 * Faker
+* Hosted on Heroku
 
-(https://github.com/sdossettswift/gauzip/blob/master/Gauzip.png)
+[Gauzip Screenshot](https://github.com/sdossettswift/gauzip/blob/master/Gauzip.png)
