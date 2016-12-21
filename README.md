@@ -9,4 +9,4 @@
 * Faker
 * Hosted on Heroku
 
-[Gauzip Screenshot](https://github.com/sdossettswift/gauzip/blob/master/Gauzip.png)
+![Gauzip Screenshot](https://github.com/sdossettswift/gauzip/blob/master/Gauzip.png)
